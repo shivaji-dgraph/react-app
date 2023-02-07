@@ -22,4 +22,3 @@ console.log(data)
 }
 
 export default App;
-st res = await axios.get(`https://backend.twitter-sentiment-analysis.org/analyze/${tweetUid}`); //post request t
