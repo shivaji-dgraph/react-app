@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState("");
 
   const fetchData = () => {
-    return fetch("https://localhost:3000/")
+    return fetch("https://node-server:3000")
           .then((response) => response.json())
           .then((data) => setData(data));
   }
@@ -22,3 +22,4 @@ console.log(data)
 }
 
 export default App;
+st res = await axios.get(`https://backend.twitter-sentiment-analysis.org/analyze/${tweetUid}`); //post request t
