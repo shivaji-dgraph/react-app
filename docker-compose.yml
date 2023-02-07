@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../node-app/Dockerfile
+    image: "node-app"
+    ports:
+      - "4000:3000"
+  frontend:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    image: "react-app"
+    ports:
+      - "3001:3000"
+    links:
+      - "backend:node-server"

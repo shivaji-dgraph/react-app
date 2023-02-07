@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState("");
 
   const fetchData = () => {
-    return fetch("https://node-server:3000")
+    return fetch("https://localhost:4000")
           .then((response) => response.json())
           .then((data) => setData(data));
   }
